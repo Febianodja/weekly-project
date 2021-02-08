@@ -137,7 +137,75 @@
         document.getElementById("premium").innerHTML = premium;
     </script>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
+    <!-- Custom JavaScript -->
+    <script src="./js/script.js"></script>
+    <script src="./js/about.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      var forEach = function(t, o, r) {
+        if ("[object Object]" === Object.prototype.toString.call(t))
+          for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+        else
+          for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
+      };
+
+      var hamburgers = document.querySelectorAll(".hamburger");
+      if (hamburgers.length > 0) {
+        forEach(hamburgers, function(hamburger) {
+          hamburger.addEventListener("click", function() {
+            this.classList.toggle("is-active");
+          }, false);
+        });
+      }
+    </script>
+    <!-- Custom OWL Slider -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+      const prevIcon = '<img src="./images/prev.svg">';
+      const nextIcon = '<img src="./images//next.svg">';
+      $(document).ready(function() {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+          autoplay: true,
+          margin: 10,
+          nav: true,
+          loop: true,
+          navText: [
+            prevIcon,
+            nextIcon
+          ],
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 1
+            },
+            1000: {
+              items: 1
+            }
+          }
+        })
+      })
+    </script>
+    <script type="text/javascript">
+      $(document).on('mouseover', 'ul li', function() {
+        $(this).addClass('active').siblings().removeClass('active')
+      })
+    </script>
+    <script type="text/javascript">
+      $(document).on('mouseover', '#tdkaktif', function() {
+        $(this).removeClass('active')
+      })
+    </script>
 
 </body>
 
