@@ -29,5 +29,5 @@ const register = async () => {
   //ubah(unpacked data JSON) jadi data object
   let dataResultObj = await response.json();
   console.log(dataResultObj);
-  window.location.href = "./signin.html"
+  window.location.href = "./login.html"
 }
