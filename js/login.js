@@ -48,7 +48,7 @@ const login = () => {
       alert("user tdk ditemukan");
       console.log("hasil alert: user tdk ditemukan");
     } else {
-      alert("user ditemukan");
+      alert("Anda berhasil login!");
     }
       console.log("Hasil akhir user yg didapat:");
       console.log(user);

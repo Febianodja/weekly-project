@@ -65,32 +65,27 @@
           <!-- Start Navbar Dropdown Menu-->
           <div class="collapse navbar-collapse bg-white justify-content-lg-end d-flex flex-column flex-lg-row flex-xl-row mobileMenu onRight"
           id="navbarSupportedContent">
-          <!-- <div class="collapse navbar-collapse bg-white p-3 p-lg-0 mt-5 mt-lg-0 justify-content-lg-end  d-flex flex-column flex-lg-row flex-xl-row mobileMenu onRight"
-            id="navbarSupportedContent"> -->
-            <ul class="navbar-nav align-self-stretch">
-              <!-- <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li> -->
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html" tabindex="-1" >Home</a>
-          </li>
-          <li class="nav-item" id="tdkaktif">
-            <a class="nav-link" href="services.html" tabindex="-1" >Services</a>
-          </li>
-          <li class="nav-item" id="tdkaktif">
-            <a class="nav-link" href="about.html" tabindex="-1" >About</a>
-          </li>
-          <li class="nav-item" id="tdkaktif">
-            <a class="nav-link" href="contactus.html" tabindex="-1" >Contact Us</a>
-          </li>
-          <li class="nav-item" id="tdkaktif">
-            <a class="nav-link" href="register.html" tabindex="-1" id="ubahDomUser">Register</a>
-          </li>
-          <li class="nav-item" id="tdkaktif">
-            <a class="nav-link" href="login.html" tabindex="-1" id="ubahDomLogout">Login</a>
-          </li>
+          <ul class="navbar-nav align-self-stretch">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html" tabindex="-1">Home</a>
+              </li>
+              <li class="nav-item" id="tdkaktif">
+                <a class="nav-link" href="services.html" tabindex="-1">Services</a>
+              </li>
+              <li class="nav-item" id="tdkaktif">
+                <a class="nav-link" href="about.html" tabindex="-1">About</a>
+              </li>
+              <li class="nav-item" id="tdkaktif">
+                <a class="nav-link" href="contactus.html" tabindex="-1">Contact Us</a>
+              </li>
+              <li class="nav-item" id="tdkaktif">
+                <a class="nav-link" href="register.html" tabindex="-1" id="ubahDomUser">Register</a>
+              </li>
+              <li class="nav-item" id="tdkaktif">
+                <a class="nav-link" href="login.html" tabindex="-1" id="ubahDomLogout">Login</a>
+              </li>
           </ul>
-     
-        </div>
+      </div>
   </nav>
     <!-- Overlay dark Nav sidebar-->
       <div class="overlay"></div>
@@ -228,11 +223,22 @@
         })
       })
     </script>    
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(document).on('click', 'div a', function(){
         $(this).removeClass('active').siblings()
       })
-    </script> 
+      
+    </script>  -->
+    <script type="text/javascript">
+      $(document).on('mouseover', 'ul li', function() {
+        $(this).addClass('active').siblings().removeClass('active')
+      })
+    </script>
+    <script type="text/javascript">
+      $(document).on('mouseover', '#tdkaktif', function() {
+        $(this).removeClass('active')
+      })
+    </script>
     <script src="js/index.js"></script>     
   </body>
 </html>
