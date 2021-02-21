@@ -34,5 +34,25 @@ if(isLoggedin) {
   ubahDomLogout.innerHTML = "login"
 }
 
+//Fetch API product contents
 
+const getProducts = async () => {
+  const api = "https://6023a8ba6bf3e6001766b52c.mockapi.io/product";
+  let response = await fetch(api);
+  let result = await response.json();
+  result.map(item => {
+      let display = document.querySelector('#tampil');
+      let showCards = document.createElement('div');
 
+      showCards.innerHTML = `<img src="${item.images}" class="card-img-top" alt="Card image cap"></img>
+                            <br><br>
+                            <h3>${item.produk}</h3>
+                            <p class="card-text">${item.detail}</p>
+                            <h3 >${item.price}</h3>
+                            <br>
+                            <button type="button" class="btn btn-secondary"><a href="cart.html">CHOOSE ${item.produk}</a></button>`
+      showCards.classList.add("col-md-4");
+      display.appendChild(showCards)
+  })
+}
+getProducts();
