@@ -56,3 +56,15 @@ const getProducts = async () => {
   })
 }
 getProducts();
+
+// let {images, ...restProducts} = result;
+// console.log(restProducts);
+
+// const isUserLoggedin = () => {
+//   if(localStorage.getItem("user")=='undefined'){
+//     window.location.href = "register.html";
+//   } else {
+//     localStorage.setItem("item-list", JSON.stringify(restProducts));
+//   }
+// }
+// isUserLoggedin();
