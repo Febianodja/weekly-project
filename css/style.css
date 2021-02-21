@@ -817,11 +817,16 @@ label {
 	padding: 0px 0px 15px 0px;
 	border-style: groove;
 	border-width: thin;
-	border-radius: 3px;
+	border-radius: 6px;
+}
+
+.col-md-4 img {
+	border-top-left-radius: 6px ;
+	border-top-right-radius: 6px;
 }
 
 .col-md-4 p {
-	padding: 10px;
+	padding: 30px;
 	color: gray;
 }
 
