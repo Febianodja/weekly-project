@@ -812,3 +812,32 @@ label {
 .card {
 	margin-right: 5px;
 }
+
+.col-md-4 {
+	padding: 0px 0px 15px 0px;
+	border-style: groove;
+	border-width: thin;
+	border-radius: 3px;
+}
+
+.col-md-4 p {
+	padding: 10px;
+	color: gray;
+}
+
+.col-md-4 a{
+	text-decoration: none;
+	color: white;
+}
+
+.btn-secondary:hover {
+	background-color: #3f3f3f;
+	border-color: #3f3f3f;
+	color: white;
+	font-family: popinsmed;
+}
+
+.container h1 {
+	text-align: center;
+	padding-top: 50px;
+}
