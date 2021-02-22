@@ -32,8 +32,9 @@ const login = () => {
           console.log(user);
           localStorage.setItem("user", JSON.stringify(restuser));
           localStorage.setItem("isLoggedin", JSON.stringify("Logout"));
+          localStorage.setItem("udahLogin", true)
           alert("password ditemukan");
-          window.location.href = "../index.html";
+          window.location.href = "index.html";
         }else {
           alert("password anda salah");
           console.log("password anda salah");
