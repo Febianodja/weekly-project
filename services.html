@@ -99,11 +99,30 @@
         </div>
     </div>
     <!-- END NAVBAR-->
-
+    <!-- Trigger the modal with a button -->
+    <!-- Modal -->
+<div class="modal fade" id="notLoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Anda belum login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Silahkan login terlebih dahulu
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" id="ok" class="btn btn-primary">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="container">
         <div class="row text-center" id="tampil">
             
         </div>
+        
         <!-- <div class="card-deck">
             <div class="card">
                 <div id="showProduct"></div>
