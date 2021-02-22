@@ -50,21 +50,15 @@ const getProducts = async () => {
                             <p class="card-text">${item.detail}</p>
                             <h3 >${item.price}</h3>
                             <br>
-                            <button type="button" class="btn btn-secondary"><a href="cart.html">CHOOSE ${item.produk}</a></button>`
+                            <button type="button" onclick="isClicked(${item.id})" class="btn btn-secondary"><a href="cart.html">CHOOSE ${item.produk}</a></button>`
       showCards.classList.add("col-md-4");
       display.appendChild(showCards)
   })
 }
 getProducts();
+ 
+const isClicked = (id) => {
+  localStorage.setItem("productId", JSON.stringify(id));
+}
 
-// let {images, ...restProducts} = result;
-// console.log(restProducts);
 
-// const isUserLoggedin = () => {
-//   if(localStorage.getItem("user")=='undefined'){
-//     window.location.href = "register.html";
-//   } else {
-//     localStorage.setItem("item-list", JSON.stringify(restProducts));
-//   }
-// }
-// isUserLoggedin();
