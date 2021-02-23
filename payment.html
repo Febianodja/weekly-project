@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Payment Details</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+		<!-- Custom Fonts -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="fonts/montserrat/montserrat.css"
+		/>
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css" />
+
+		<!-- Css External -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Css Inline -->
+		<style>
+			code {
+				display: inline-block;
+			}
+
+			code,
+			.hamburger {
+				vertical-align: middle;
+			}
+
+			h3 {
+				text-align: center;
+			}
+		</style>
+		<!-- Css 3rd Party -->
+		<link rel="stylesheet" href="css/hamburgers.css" />
+
+		<!-- Owl Carousel-->
+		<!-- <link rel="stylesheet" href="css/docs.theme.min.css"> -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.css" />
+	</head>
+
+	<body>
+		<div class="container mx-auto" style="width: 200px">
+			<img src="images/dracophotologo.png" class="brand" alt="..." id="logo" />
+		</div>
+
+		<nav
+			class="navbar navbar-expand-lg navbar-white bg-white justify-content-center fixed-top"
+		></nav>
+
+		<div class="container">
+			<h1 id="paymentdetailtext">Payment Details</h1>
+			<div class="container border-bottom m-5 mx-auto" id="linessection"></div>
+		</div>
+
+		<!-- START PAYMENT LIST-->
+		<div class="container" id="paymentDetailtampil">
+			<!-- <ul class="list-group text-center">
+				<li class="list-group-item">Product: Basic</li>
+				<li class="list-group-item">Price: 2000000</li>
+				<li class="list-group-item">
+					Detail: Album Kolase 20 Halaman 10 Sheet,1 cd video,2 foto ukuran
+					17R,2 frame bingkai foto"
+				</li>
+			</ul> -->
+		</div>
+		<div
+			class="modal fade"
+			id="notLoginModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header mx-auto">
+						<h5 class="modal-title" id="exampleModalLabel">Payment Status :</h5>
+						<button type="button" id="close" class="close" aria-label="Close">
+							<!-- <span aria-hidden="true">&times;</span> -->
+						</button>
+					</div>
+					<div class="modal-body mx-auto">
+						Your payment has been successfully processed!
+					</div>
+					<div class="modal-footer">
+						<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+						<button type="button" id="ok" class="btn btn-primary">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center pt-5" id="tampil"></div>
+		</div>
+		<!-- END PAYMENT LIST-->
+
+		<!-- <div id="tampil"></div> -->
+		<br />
+		<br />
+		<div class="container border-bottom m-5 mx-auto" id="linessection"></div>
+		<!-- START FOOTER -->
+
+		<div class="container">
+			<div class="d-flex justify-content-center bd-highlight mb-1">
+				<div class="ml-3 bd-highlight">
+					<i class="fa-1x fab fa-whatsapp text-grey ml-2"></i>
+					<a href="#" target="_blank" id="captionfooter">+62 12345678</a>
+				</div>
+				<div class="ml-3 bd-highlight">
+					<i class="fa-1x fab fa-instagram text-grey ml-2"></i>
+					<a href="3" id="captionfooter">Draco Photo</a>
+				</div>
+				<div class="ml-3 bd-highlight">
+					<i class="fa-1x far fa-envelope text-grey ml-2"></i>
+					<a href="#" id="captionfooter">project@dracophoto.com</a>
+				</div>
+				<br /><br />
+			</div>
+		</div>
+		<!-- END FOOTER -->
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.4.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Custom JavaScript -->
+		<script src="./js/script.js"></script>
+
+		<!-- Custom JavaScript -->
+		<script>
+			var forEach = function (t, o, r) {
+				if ("[object Object]" === Object.prototype.toString.call(t))
+					for (var c in t)
+						Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+				else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
+			};
+
+			var hamburgers = document.querySelectorAll(".hamburger");
+			if (hamburgers.length > 0) {
+				forEach(hamburgers, function (hamburger) {
+					hamburger.addEventListener(
+						"click",
+						function () {
+							this.classList.toggle("is-active");
+						},
+						false
+					);
+				});
+			}
+		</script>
+		<!-- Custom OWL Slider -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script>
+			const prevIcon = '<img src="./images/prev.svg">';
+			const nextIcon = '<img src="./images//next.svg">';
+			$(document).ready(function () {
+				var owl = $(".owl-carousel");
+				owl.owlCarousel({
+					autoplay: true,
+					margin: 10,
+					nav: true,
+					loop: true,
+					navText: [prevIcon, nextIcon],
+					responsive: {
+						0: {
+							items: 1,
+						},
+						600: {
+							items: 1,
+						},
+						1000: {
+							items: 1,
+						},
+					},
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).on("mouseover", "ul li", function () {
+				$(this).addClass("active").siblings().removeClass("active");
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).on("mouseover", "#tdkaktif", function () {
+				$(this).removeClass("active");
+			});
+		</script>
+		<script src="js/payment.js"></script>
+	</body>
+</html>
