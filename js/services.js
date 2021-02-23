@@ -55,7 +55,7 @@ const getProducts = async () => {
       <ul>
         ${detailContainer}
       </ul>
-      <h3 >${item.price}</h3>
+      <h3 >Rp.${item.price}</h3>
       <br>
       <button type="button" class="btn btn-secondary" onclick="isClicked(${item.id})" id="btn-modal">CHOOSE ${item.produk}</button>`
       showCards.classList.add("col-md-4");
