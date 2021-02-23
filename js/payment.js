@@ -19,7 +19,7 @@ for (item in resDataUser){
 }
 
 let dataPrice = localStorage.getItem("totalPrice")
-console.log(dataPrice);
+// console.log(dataPrice);
 let display = document.querySelector("#paymentDetailtampil");
 let paymentRes = document.createElement("ul")
 paymentRes.classList.add("list-group", "text-center");
@@ -66,3 +66,11 @@ const isClicked = () => {
   //   // window.location.href="./cart.html"
   // }
 }
+
+const getAddOns = async () => {
+  const api = `https://6023a8ba6bf3e6001766b52c.mockapi.io/add-ons`;
+  let response = await fetch(api);
+  let result = await response.json();
+  console.log(result);
+}
+getAddOns();
