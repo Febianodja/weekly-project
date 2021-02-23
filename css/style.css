@@ -826,7 +826,6 @@ label {
 }
 
 .col-md-4 img {
-	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
 }
 
@@ -835,7 +834,8 @@ label {
 	color: gray;
 }
 
-.col-md-4 a {
+
+.col-md-4 a{
 	text-decoration: none;
 	color: white;
 }
@@ -937,3 +937,4 @@ h3 {
 .btn:focus {
 	outline: none;
 }
+

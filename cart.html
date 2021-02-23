@@ -5,17 +5,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Services</title>
+    <title>Shopping Cart</title>
+    <!-- <script>
+      let checkUser = localStorage.getItem("user");
+      if(!checkUser){
+        window.location.href="./login.html"
+      }
+      
+      
+      </script> -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-
+    
     <!-- Custom Fonts -->
     <link rel="stylesheet" type="text/css" href="fonts/montserrat/montserrat.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
-
+    
     <!-- Css External -->
     <link rel="stylesheet" href="css/style.css" />
-
+    
     <!-- Css Inline -->
     <style>
         code {
@@ -33,105 +41,28 @@
     </style>
     <!-- Css 3rd Party -->
     <link rel="stylesheet" href="css/hamburgers.css">
-
+    
     <!-- Owl Carousel-->
     <!-- <link rel="stylesheet" href="css/docs.theme.min.css"> -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
-</head>
-
-<body>
-
-    <!-- START NAVBAR-->
-    <!-- Start Navbar Brand-->
-    <div class="container mx-auto" style="width: 200px;">
-        <a href="index.html"><img src="images/dracophotologo.png" class="brand" alt="..." id=logo></a>
-    </div>
-    <!-- End Navbar Brand-->
-
-    <!-- Start Navbar Brand Hidden & Hamburger Menu-->
-    <nav class="navbar navbar-expand-lg navbar-white bg-white justify-content-center fixed-top">
-        <span class=" border-top" id="linetop">
-            <div class="container border-bottom">
-                <a href="index.html"><img src="images/dracophotologo.png" class="brand" alt="..." hidden></a>
-                <button class="navbar-toggler align-self-start" type="button">
-                    <div class="hamburger hamburger--3dx-r" id="iphone5set">
-                        <div class="hamburger-box">
-                            <div class="hamburger-inner"></div>
-                        </div>
-                    </div>
-                </button>
-                <!-- End Navbar Brand Hidden & Hamburger Menu-->
-
-                <!-- Start Navbar Dropdown Menu-->
-                <div class="collapse navbar-collapse bg-white justify-content-lg-end d-flex flex-column flex-lg-row flex-xl-row mobileMenu onRight"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav align-self-stretch">
-                        <li class="nav-item" id="tdkaktif">
-                          <a class="nav-link" href="index.html" tabindex="-1">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                          <a class="nav-link" href="services.html" tabindex="-1">Services</a>
-                        </li>
-                        <li class="nav-item" id="tdkaktif">
-                          <a class="nav-link" href="about.html" tabindex="-1">About</a>
-                        </li>
-                        <li class="nav-item" id="tdkaktif">
-                          <a class="nav-link" href="contactus.html" tabindex="-1">Contact Us</a>
-                        </li>
-                        <li class="nav-item" id="tdkaktif">
-                          <a class="nav-link" href="register.html" tabindex="-1" id="ubahDomUser">Register</a>
-                        </li>
-                        <li class="nav-item" id="tdkaktif">
-                          <a class="nav-link" href="login.html" tabindex="-1" id="ubahDomLogout">Login</a>
-                        </li>
-                    </ul>
-                </div>
-    </nav>
-
-    <!-- Overlay dark Nav sidebar-->
-    <div class="overlay"></div>
-    <div class="container py-4 my-4">
-        <div class="row">
-            <div class="col-md-12">
-            </div>
-        </div>
-    </div>
-    <!-- END NAVBAR-->
-    <!-- Trigger the modal with a button -->
-    <!-- Modal -->
-<div class="modal fade" id="notLoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Anda belum login</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Silahkan login terlebih dahulu
-      </div>
-      <div class="modal-footer">
-        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-        <button type="button" id="ok" class="btn btn-primary">OK</button>
-      </div>
-    </div>
-  </div>
-</div>
+  </head>
+  
+  <body>
     <div class="container">
-        <div class="row text-center" id="tampil">
-            
-        </div>
+      <h1>SHOPPING CART</h1>
+      <div class="container border-bottom m-5 mx-auto" id="linessection">
+      </div>
+      
+      <div id="tampil">
         
-        <!-- <div class="card-deck">
-            <div class="card">
-                <div id="showProduct"></div>
-            </div>
-        </div> -->
-        <br>
-        <br> 
-        <br>
-        <div class="container border-bottom m-5 mx-auto" id="linessection">
+      </div>
+      
+      <br>
+      <br> 
+      <br>
+      <div class="container border-bottom m-5 mx-auto" id="linessection"></div>
     </div>
     <!-- START FOOTER -->
     
@@ -222,7 +153,7 @@
         $(this).removeClass('active')
       })
     </script>
-  <script src="js/services.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 
 </html>

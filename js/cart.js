@@ -45,7 +45,9 @@ const getProducts = async () => {
   <p>${result.detail}</p>
   <h3>${result.price}</h3>
   
-  <button type="button" onclick="isClicked(${result.price})" class="btn btn-secondary"><a href="./payment.html">CHECKOUT</a></button>`
+
+  <button type="button" onclick="isClicked(${result.price})" class="btn btn-secondary"><a href="#">CHECKOUT</a></button>`
+
   
   
   display.appendChild(showDisplay)
