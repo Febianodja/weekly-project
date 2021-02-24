@@ -6,7 +6,7 @@ let isLoggedin = JSON.parse(localStorage.getItem("isLoggedin"))
 if(user) {
   ubahNavUser.innerHTML = user.name
   let kehalCart = document.querySelector("#ubahDomUser")
-  kehalCart.href = "cart.html"
+  kehalCart.href = "invoice.html"
 
   //hapus data strage ketika logout
   ubahDomLogout.addEventListener("click", () =>{
