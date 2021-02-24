@@ -40,7 +40,7 @@ const getProducts = async () => {
   let clickedBtn = document.querySelector("#checkoutBtn")
   clickedBtn.addEventListener("click", () => {
     localStorage.setItem("packageName", JSON.stringify(`${result.produk}`))
-    localStorage.setItem("packagePrice", JSON.stringify(`${result.price}`))
+    localStorage.setItem("packagePrice", `${result.price}`)
   })
   
   showDisplay.innerHTML=`<h3 id="cartProduct">${result.produk}</h3>
