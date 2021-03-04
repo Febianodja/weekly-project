@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>About</title>
+    <title>Services</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!-- Custom Fonts -->
@@ -69,16 +69,22 @@
                     id="navbarSupportedContent">
                     <ul class="navbar-nav align-self-stretch">
                         <li class="nav-item" id="tdkaktif">
-                            <a class="nav-link" href="index.html" tabindex="-1">Home</a>
+                          <a class="nav-link" href="index.html" tabindex="-1">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="services.html" tabindex="-1">Services</a>
+                          <a class="nav-link" href="services.html" tabindex="-1">Services</a>
                         </li>
                         <li class="nav-item" id="tdkaktif">
-                            <a class="nav-link" href="about.html" tabindex="-1">About</a>
+                          <a class="nav-link" href="about.html" tabindex="-1">About</a>
                         </li>
                         <li class="nav-item" id="tdkaktif">
-                            <a class="nav-link" href="contactus.html" tabindex="-1">Contact Us</a>
+                          <a class="nav-link" href="contactus.html" tabindex="-1">Contact Us</a>
+                        </li>
+                        <li class="nav-item" id="tdkaktif">
+                          <a class="nav-link" href="register.html" tabindex="-1" id="ubahDomUser">Register</a>
+                        </li>
+                        <li class="nav-item" id="tdkaktif">
+                          <a class="nav-link" href="login.html" tabindex="-1" id="ubahDomLogout">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -93,49 +99,60 @@
         </div>
     </div>
     <!-- END NAVBAR-->
-
-
-    <div class="card-deck">
-        <div class="card">
-            <img src="images/basic.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h3 class="card-title">BASIC</h3>
-                <p class="card-text" id="basic"></p>
-                <h3>Rp. 2.000.000,-</h3>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/medium.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h3 class="card-title">MEDIUM</h3>
-                <p class="card-text" id="medium"></p>
-                <h3>Rp. 3.500.000,-</h3>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/premium.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h3 class="card-title">PREMIUM</h3>
-                <p class="card-text" id="premium"></p>
-                <h3>Rp. 5.000.000,-</h3>
-            </div>
-        </div>
+    <!-- Trigger the modal with a button -->
+    <!-- Modal -->
+<div class="modal fade" id="notLoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Anda belum login</h5>
+        <button type="button" id="close" class="close" aria-label="Close">
+      </div>
+      <div class="modal-body">
+        Silahkan login terlebih dahulu
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" id="ok" class="btn btn-primary">OK</button>
+      </div>
     </div>
-
-    <script>
-        var basic1 = ["1 Album Kolase 20 Halaman 10 Sheet", "1 cd video", "2 foto ukuran 17R", "2 frame bingkai foto"]
-        document.getElementById("basic").innerHTML = basic1;
-    </script>
-
-    <script>
-        let medium = ["1 Album Kolase 30 Halaman 15 Sheet", "3 cd video", "5 foto ukuran 17R", "5 frame bingkai foto"]
-        document.getElementById("medium").innerHTML = medium;
-    </script>
-
-    <script>
-        var premium = ["1 Album Kolase 50 Halaman 30 Sheet", "5 cd video", "10 foto ukuran 17R", "10 frame bingkai foto"]
-        document.getElementById("premium").innerHTML = premium;
-    </script>
+  </div>
+</div>
+    <div class="container">
+        <div class="row text-center" id="tampil">
+            
+        </div>
+        
+        <!-- <div class="card-deck">
+            <div class="card">
+                <div id="showProduct"></div>
+            </div>
+        </div> -->
+        <br>
+        <br> 
+        <br>
+        <div class="container border-bottom m-5 mx-auto" id="linessection">
+    </div>
+    <!-- START FOOTER -->
+    
+  <div class="container">
+    <div class="d-flex justify-content-center bd-highlight mb-1">
+      <div class="ml-3 bd-highlight">
+        <i class="fa-1x fab fa-whatsapp text-grey ml-2"></i>
+        <a href="#" target="_blank" id="captionfooter">+62 12345678</a>
+      </div>
+      <div class="ml-3 bd-highlight">
+        <i class="fa-1x fab fa-instagram text-grey ml-2"></i>
+        <a href="3" id="captionfooter">Draco Photo</a>
+      </div>
+      <div class="ml-3 bd-highlight">
+        <i class="fa-1x far fa-envelope text-grey ml-2"></i>
+        <a href="#" id="captionfooter">project@dracophoto.com</a>
+      </div>
+      <br><br>
+    </div>
+  </div>
+    <!-- END FOOTER -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -145,7 +162,6 @@
 
     <!-- Custom JavaScript -->
     <script src="./js/script.js"></script>
-    <script src="./js/about.js"></script>
 
     <!-- Custom JavaScript -->
     <script>
@@ -206,7 +222,7 @@
         $(this).removeClass('active')
       })
     </script>
-
+  <script src="js/services.js"></script>
 </body>
 
 </html>

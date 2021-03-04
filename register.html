@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Contact Us</title>
+  <title>REGISTER</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
 
   <!-- Custom Fonts -->
@@ -72,14 +72,14 @@
             <li class="nav-item" id="tdkaktif">
               <a class="nav-link" href="about.html" tabindex="-1">About</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item" id="tdkaktif">
               <a class="nav-link" href="contactus.html" tabindex="-1">Contact Us</a>
             </li>
-            <li class="nav-item" id="tdkaktif">
-              <a class="nav-link" href="register.html" tabindex="-1" id="ubahDomUser">Register</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="register.html" tabindex="-1" >Register</a>
             </li>
             <li class="nav-item" id="tdkaktif">
-              <a class="nav-link" href="login.html" tabindex="-1" id="ubahDomLogout">Login</a>
+              <a class="nav-link" href="login.html" tabindex="-1" >Login</a>
             </li>
           </ul>
         </div>
@@ -96,38 +96,26 @@
   <!-- END NAVBAR-->
 
 
-  <!-- CONTACT US-->
+  <!-- REGISTER-->
   <div class="container" id="sldr">
     <form>
-      <h2 class="titlecontactus" id="titlecontactteks">Contact Us</h2>
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Name</label>
-        <input type="text" class="form-control" placeholder="Enter your name">
-      </div>
+      <h2 class="titlecontactus" id="titlecontactteks">Register</h2>
       <div class="form-group">
         <label for="exampleFormControlInput1">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email address">
+        <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email address">
       </div>
       <div class="form-group">
-        <label for="exampleFormControlSelect1">Service</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>Engagement</option>
-          <option>Prewedding</option>
-          <option>Wedding</option>
-          <option>Photobooth</option>
-        </select>
+        <label for="exampleFormControlInput1" id="password">Password</label>
+        <input type="password" name="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter your password">
       </div>
-      <!-- <br> -->
       <div class="form-group">
-        <label for="exampleFormControlTextarea1">Messages</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message…"></textarea>
+        <label for="exampleFormControlInput1" id="name">Name</label>
+        <input type="text" name="name" class="form-control" id="exampleFormControlInput2" placeholder="Enter your name">
       </div>
-      <!-- <br> -->
-      <button type="submit" class="btn btn-submt" id="btnsubmitcustom">Submit</button>
+      <button type="submit" class="btn btn-submt" id="btnsubmitcustom" onclick="register()">REGISTER</button>
     </form>
   </div>
-
-  <!-- CONTACT US-->
+  <!-- REGISTER-->
 
   <br><br>
   <div class="container border-bottom m-3 mx-auto" id="linessectionsubphoto">
@@ -227,13 +215,13 @@
       // $(this).addClass('active').siblings().removeClass('active')
     })
   </script>
+  <script src="js/register.js"></script>
   <!-- default sblm penambhan #tdkaktif -->
   <!-- <script type="text/javascript">
       $(document).on('mouseover', 'li', function(){
         $(this).removeClass('active')
       })
     </script>    -->
-  <script src="js/contacus.js"></script>
 </body>
 
 </html>
