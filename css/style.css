@@ -818,7 +818,6 @@ label {
 	margin-right: 5px;
 }
 
-<<<<<<< HEAD
 .float{
 	position:fixed;
 	width:60px;
@@ -837,7 +836,6 @@ label {
 .my-float{
 	margin-top:16px;
 }
-=======
 .col-md-4 {
 	padding: 0px 0px 15px 0px;
 	border-style: groove;
@@ -1014,7 +1012,6 @@ a:hover{
 	color: white;
 	font-family: popinsmed;
 }
->>>>>>> 1b7c61d510823b8b453be26d8b84e5a225c80966
 
 
 
@@ -1035,4 +1032,33 @@ a:hover{
 
 .my-float{
 	margin-top:16px;
+}
+
+.bd-placeholder-img{
+	object-fit: cover;
+	width: 270px;
+	height: 270px;
+	border-radius: 500px;
+}
+
+.col-md-7.my-auto {
+	padding-left: 130px;
+}
+
+.mid.col-md-5{
+	padding-left: 120px;
+}
+
+.col-md-5 {
+	padding-left: 75px;
+}
+
+.cart-text{
+	font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 0px 25px 10px 25px;
+    color: grey !important;
+	text-align: center;
 }
