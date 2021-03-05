@@ -53,22 +53,80 @@
 	</head>
 
 	<body>
-		<div class="container mx-auto" style="width: 200px">
-			<img src="images/dracophotologo.png" class="brand" alt="..." id="logo" />
-		</div>
+		<!-- START NAVBAR-->
+      <!-- Start Navbar Brand-->     
+      <!-- <div class="container mx-auto fixed-top" style="width: 200px;"> -->
+		<div class="container mx-auto" style="width: 200px;">
+			<img src="images/dracophotologo.png" class="brand" alt="..." id=logo>
+		  </div>
+		  <!-- End Navbar Brand-->  
+	
+		  <!-- Start Navbar Brand Hidden & Hamburger Menu-->     
+		  <!-- <nav class="navbar navbar-expand-lg navbar-white bg-white justify-content-sm-start fixed-top"> -->
+	  <nav class="navbar navbar-expand-lg navbar-white bg-white justify-content-center fixed-top">
+			<span class=" border-top" id="linetop"> 
+			<div class="container border-bottom">
+			  <img src="images/dracophotologo.png" class="brand" alt="..." hidden>
+			  <button class="navbar-toggler align-self-start" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger hamburger--3dx-r" id="iphone5set">
+				  <div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				  </div>
+				</div>
+			  </button>
+			  <!-- End Navbar Brand Hidden & Hamburger Menu-->     
+			  
+			  <!-- Start Navbar Dropdown Menu-->
+			  <div class="collapse navbar-collapse bg-white justify-content-lg-end d-flex flex-column flex-lg-row flex-xl-row mobileMenu onRight"
+			  id="navbarSupportedContent">
+			  <ul class="navbar-nav align-self-stretch">
+				  <li class="nav-item active">
+					<a class="nav-link" href="index.html" tabindex="-1">Home</a>
+				  </li>
+				  <li class="nav-item" id="tdkaktif">
+					<a class="nav-link" href="services.html" tabindex="-1">Services</a>
+				  </li>
+				  <li class="nav-item" id="tdkaktif">
+					<a class="nav-link" href="portfoliohal1.html" tabindex="-1">Portfolio</a>
+				  </li>
+				  <li class="nav-item" id="tdkaktif">
+					<a class="nav-link" href="about.html" tabindex="-1">About</a>
+				  </li>
+				  <li class="nav-item" id="tdkaktif">
+					<a class="nav-link" href="contactus.html" tabindex="-1">Contact Us</a>
+				  </li>
+				  <li class="nav-item" id="tdkaktif">
+					<a class="nav-link" href="register.html" tabindex="-1" id="ubahDomUser">Register</a>
+				  </li>
+				  <li class="nav-item" id="tdkaktif">
+					<a class="nav-link" href="login.html" tabindex="-1" id="ubahDomLogout">Login</a>
+				  </li>
+			  </ul>
+		  </div>
+	  </nav>
+		<!-- Overlay dark Nav sidebar-->
+		  <div class="overlay"></div>
+		  <div class="container py-4 my-4">
+			<div class="row">
+			  <div class="col-md-12">
+			  </div>
+			</div>
+		  </div>
+		<!-- END NAVBAR-->
+		
 
-		<nav
-			class="navbar navbar-expand-lg navbar-white bg-white justify-content-center fixed-top"
-		></nav>
+		
 
 		<div class="container">
 			<h1 id="paymentdetailtext">Shopping Cart</h1>
-			<div class="container border-bottom m-5 mx-auto" id="linessection"></div>
-		</div>
+			<br>
+			<br>
+			<br>
 		<div class="container justify-content-center">
 			<div id="cartTampil"></div>
 			<br />
-			<div class="container border-bottom m-5 mx-auto" id="linessection"></div>
+			<br>
+			<h6 class="cart-text">For your satisfaction, we provide extras to boost up your photoshoot sessions:</h6>
 			<h3>Add-Ons</h3>
 			<div id="showAddOns" class="container mx-auto"></div>
 			<br />

@@ -819,6 +819,7 @@ label {
 }
 
 
+
 .float{
 	position:fixed;
 	width:60px;
@@ -838,7 +839,7 @@ label {
 	margin-top:16px;
 }
 
-<<<<<<< HEAD
+
 .float{
 	position:fixed;
 	width:60px;
@@ -857,7 +858,6 @@ label {
 .my-float{
 	margin-top:16px;
 }
-=======
 .col-md-4 {
 	padding: 0px 0px 15px 0px;
 	border-style: groove;
@@ -1034,7 +1034,55 @@ a:hover{
 	color: white;
 	font-family: popinsmed;
 }
->>>>>>> 1b7c61d510823b8b453be26d8b84e5a225c80966
 
 
+
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.bd-placeholder-img{
+	object-fit: cover;
+	width: 270px;
+	height: 270px;
+	border-radius: 500px;
+}
+
+.col-md-7.my-auto {
+	padding-left: 130px;
+}
+
+.mid.col-md-5{
+	padding-left: 120px;
+}
+
+.col-md-5 {
+	padding-left: 75px;
+}
+
+.cart-text{
+	font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 0px 25px 10px 25px;
+    color: grey !important;
+	text-align: center;
+}
 
