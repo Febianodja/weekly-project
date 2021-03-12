@@ -4,7 +4,7 @@ const login = () => {
   let emailInput = document.getElementById("email").value;
   let passwordInput = document.getElementById("exampleFormControlInput1").value;
 
-  console.log("INPUTAN USER:", "email:",emailInput, "password:",passwordInput);
+  // console.log("INPUTAN USER:", "email:",emailInput, "password:",passwordInput);
 
   fetch("https://6023a8ba6bf3e6001766b52c.mockapi.io/Dracophoto")
   //response.json() utk package data json jadi data object
